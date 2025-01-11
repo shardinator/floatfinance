@@ -1,104 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FloatFinance</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FloatFinance – Lending Revolution</title>
   <style>
+    /* GLOBAL RESET AND TYPOGRAPHY */
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #00c3ff, #ffff1c);
-    }
-
-    .container {
-      max-width: 800px;
-      width: 90%;
-      background-color: #ffffffaa;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      margin: auto;
-    }
-
-    h1 {
-      font-size: 3rem;
+      background: linear-gradient(120deg, #fdfbfb, #ebedee); /* Subtle gradient background */
       color: #333;
-      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Vibrant, multi-stop gradient */
+      color: #ffffff;
+      padding: 1.5rem;
       text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin-bottom: 0;
+      opacity: 0.9;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      /* Subtle inner gradient for the container */
+      background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+    }
+
+    /* HEADINGS & TEXT */
+    h2, h3 {
+      color: #0b3954; /* A darker teal accent for headings */
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
     }
 
     h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      font-size: 1.75rem;
+      border-left: 4px solid #4facfe;
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
     }
 
     h3 {
-      font-size: 1.5rem;
-      color: #333;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
     }
 
-    p, li {
-      font-size: 1rem;
-      color: #666;
-      line-height: 1.6;
-      margin-bottom: 10px;
+    p {
+      margin-bottom: 1rem;
+      color: #555;
     }
 
-    ul,
-    ol {
-      margin-left: 30px;
-      margin-bottom: 20px;
+    /* LISTS */
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #555;
     }
 
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* HIGHLIGHTED TEXT */
     strong {
-      color: #333;
+      color: #015a5f; /* Bright accent color for emphasis */
+      font-weight: 600;
+    }
+
+    /* SUB-LISTS */
+    ul ul,
+    ol ol {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      list-style-type: circle;
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+      opacity: 0.8;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .container {
+        margin-top: 1rem;
+        padding: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>FloatFinance</h1>
+    <p>A Lending Revolution for Necessities</p>
+  </header>
+
+  <!-- MAIN CONTENT WRAPPER -->
   <div class="container">
-    <h1>Float Loans</h1>
-    <h2>A Lending Revolution for Necessities</h2>
+    <h2>Float Loans</h2>
+    <p>
+      Float Loans are an innovative, dignity-preserving lending platform that provides
+      access to affordable credit for individuals who lack collateral, have poor or no
+      credit history, or are excluded from traditional financial services.
+    </p>
 
     <h2>1. Concept from the End Lendee’s Perspective</h2>
     <p>
-      Float Loans are an innovative, dignity-preserving lending platform that provides access to affordable credit for individuals who lack collateral, have poor or no credit history, or are excluded from traditional financial services.
+      Float Loans are an innovative, dignity-preserving lending platform that provides
+      access to affordable credit for individuals who lack collateral, have poor or no credit
+      history, or are excluded from traditional financial services.
     </p>
+
     <h3>Key Features for Lendees</h3>
     <ul>
-      <li><strong>Access to Necessities:</strong> Loans are available only for pre-approved essential goods and services such as housing, food, education, healthcare, and non-luxury personal use items.</li>
-      <li><strong>No Collateral or Credit History Required:</strong> Anyone can apply, regardless of their financial history.</li>
-      <li><strong>Affordable and Flexible Repayment:</strong>
+      <li>
+        <strong>Access to Necessities:</strong>
+        Loans are available only for pre-approved essential goods and services such as
+        housing, food, education, healthcare, and non-luxury personal use items.
+      </li>
+      <li>
+        <strong>No Collateral or Credit History Required:</strong>
+        Anyone can apply, regardless of their financial history.
+      </li>
+      <li>
+        <strong>Affordable and Flexible Repayment:</strong>
         <ul>
-          <li><strong>Low Interest Rates:</strong> Similar to home-loan rates, making borrowing affordable.</li>
-          <li><strong>Flexible Deferral Options:</strong> Interest payments can be deferred monthly, stacking to the end of the loan term. Deferred interest is recalculated monthly, allowing borrowers to prioritize other immediate needs.</li>
-          <li><strong>Float Contribution:</strong> Borrowers contribute a small additional amount (a “float”) to the principal, which helps sustain the platform and support others.</li>
-          <li><strong>Transparent Process:</strong> Borrowers are informed of all terms upfront, with no hidden fees or penalties.</li>
+          <li>
+            <strong>Low Interest Rates:</strong>
+            Similar to home-loan rates, making borrowing affordable.
+          </li>
+          <li>
+            <strong>Flexible Deferral Options:</strong>
+            Interest payments can be deferred monthly, stacking to the end of the
+            loan term. Deferred interest is recalculated monthly, allowing borrowers
+            to prioritize other immediate needs.
+          </li>
+          <li>
+            <strong>Float Contribution:</strong>
+            Borrowers contribute a small additional amount (a “float”) to the principal,
+            which helps sustain the platform and support others.
+          </li>
+          <li>
+            <strong>Transparent Process:</strong>
+            Borrowers are informed of all terms upfront, with no hidden fees or penalties.
+          </li>
         </ul>
       </li>
     </ul>
     <p>
-      <strong>Impact for Borrowers:</strong> Float Loans empower individuals to address urgent needs, improve their quality of life, and achieve financial stability without falling into predatory lending traps or high-interest cycles.
+      <strong>Impact for Borrowers:</strong>
+      Float Loans empower individuals to address urgent needs, improve their quality of life,
+      and achieve financial stability without falling into predatory lending traps or high-interest cycles.
     </p>
 
     <h2>2. How it Works for the Lender</h2>
     <p>
-      The Float Loans platform operates as a sustainable social enterprise supported by charitable foundations and managed with the assistance of an established financial institution to ensure operational efficiency and risk management.
+      The Float Loans platform operates as a sustainable social enterprise supported by
+      charitable foundations and managed with the assistance of an established financial
+      institution to ensure operational efficiency and risk management.
     </p>
+
     <h3>Loan Workflow</h3>
     <ol>
       <li>
@@ -142,12 +259,25 @@
     <p>
       Charitable foundations are key stakeholders and benefactors in the Float Loans model.
     </p>
+
     <h3>Benefits for Foundations</h3>
     <ul>
-      <li><strong>Sustainable Impact:</strong> By funding the loan pool, foundations create a self-sustaining cycle of lending and repayment, maximizing the long-term impact of their contributions.</li>
-      <li><strong>High Transparency:</strong> Regular reporting ensures that foundations can track the usage and repayment of their funds.</li>
-      <li><strong>Targeted Outcomes:</strong> Funds are used exclusively for essential goods and services, aligning with the foundation’s mission to address poverty and inequality.</li>
+      <li>
+        <strong>Sustainable Impact:</strong>
+        By funding the loan pool, foundations create a self-sustaining cycle of lending and repayment,
+        maximizing the long-term impact of their contributions.
+      </li>
+      <li>
+        <strong>High Transparency:</strong>
+        Regular reporting ensures that foundations can track the usage and repayment of their funds.
+      </li>
+      <li>
+        <strong>Targeted Outcomes:</strong>
+        Funds are used exclusively for essential goods and services, aligning with the foundation’s
+        mission to address poverty and inequality.
+      </li>
     </ul>
+
     <h3>Foundation Responsibilities</h3>
     <ul>
       <li>Provide initial capital for the lending pool.</li>
@@ -157,8 +287,12 @@
 
     <h2>4. Risk Management</h2>
     <p>
-      To ensure the long-term sustainability and credibility of the Float Loans platform, it is essential to manage risks effectively. This will require collaboration with an established financial institution such as Macquarie Bank, which can provide expertise in financial and operational risk management.
+      To ensure the long-term sustainability and credibility of the Float Loans platform,
+      it is essential to manage risks effectively. This will require collaboration with
+      an established financial institution such as Macquarie Bank, which can provide expertise
+      in financial and operational risk management.
     </p>
+
     <h3>Risk Management Strategies</h3>
     <ol>
       <li>
@@ -193,11 +327,22 @@
 
     <h2>Conclusion</h2>
     <p>
-      The Float Loans platform is a groundbreaking model for lending that combines the principles of social impact and financial sustainability. By offering dignity-based credit to underserved individuals, supported by charitable foundations and managed with the expertise of established financial institutions, the program creates a virtuous cycle of giving, lending, and repayment.
+      The Float Loans platform is a groundbreaking model for lending that combines the
+      principles of social impact and financial sustainability. By offering dignity-based
+      credit to underserved individuals, supported by charitable foundations and managed
+      with the expertise of established financial institutions, the program creates a
+      virtuous cycle of giving, lending, and repayment.
     </p>
     <p>
-      This innovative approach addresses critical gaps in financial inclusion and empowers communities to break free from poverty while ensuring the effective use of philanthropic resources.
+      This innovative approach addresses critical gaps in financial inclusion and
+      empowers communities to break free from poverty while ensuring the effective
+      use of philanthropic resources.
     </p>
   </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 FloatFinance. All rights reserved.</p>
+  </footer>
 </body>
 </html>
